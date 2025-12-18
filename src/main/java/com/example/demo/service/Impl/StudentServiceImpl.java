@@ -16,10 +16,10 @@ public class StudentServiceImpl implements StudentService{
     //ExistById()
     @Override
 public StudentEntity PostData(StudentEntity Stu){
-    return student.save(stu;)
+    return student.save(stu);
 }
 @Override
 public List<StudentEntity>getAllData(){
-return student.getAllData();
+return student.findAll();
 }
 }

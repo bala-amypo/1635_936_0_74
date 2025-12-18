@@ -12,7 +12,7 @@ public class StudentEntity{
     private String name;
     private String email;
     private String password;
-    private Date created
+    private Date created;
 
     public void setCreated(Date created){
         this.created=created;
@@ -52,6 +52,6 @@ public class StudentEntity{
         this.created=created;
     }
     public StudentEntity(){
-        
+
     }
 }
