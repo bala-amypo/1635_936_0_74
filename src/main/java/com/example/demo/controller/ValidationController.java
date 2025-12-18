@@ -13,7 +13,7 @@ import java.util.List;
 public class ValidationController{
     @Autowired ValidationService ser;
     @PostMapping("/validpost")
-    public ValidationEntity postval(@Valid @RequestBody ValidationEntity entity){
-        return ser.PostData(entity);
+    public ValidationEntity postval(@Valid @RequestBody ValidationEntity stu){
+        return ser.PostData(stu);
     }
 }
