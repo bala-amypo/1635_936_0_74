@@ -29,6 +29,6 @@ public class StudentController{
     }
     @GetMapping("/getid/{id}")
     public StudentEntity getData(@PathVariable int id){
-        return service.getData(id).orElse(null);
+        return ser.getData(id);
     }
 }
