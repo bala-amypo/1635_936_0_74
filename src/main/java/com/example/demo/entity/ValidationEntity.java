@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.email;
-import jakarta.persistence.Max;
-import jakarta.persistence.Positive;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 @Entity
 public class ValidationEntity{
     @Id
