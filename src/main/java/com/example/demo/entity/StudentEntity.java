@@ -12,5 +12,34 @@ public class StudentEntity{
     private String name;
     private String email;
     private String password;
-    private Date cr3
+    private Date created
+
+    public void setCreated(Date created){
+        this.created=created;
+    }
+    public Date getCreated(){
+        return created;
+    }
+    public void setId(Integer id){
+        this.id=id;
+    }
+    public Integer getId(){
+        return id;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
+    public String getPassword(String password){
+        this.password=password;
+    }
+    public void 
 }
