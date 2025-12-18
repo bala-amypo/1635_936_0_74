@@ -9,4 +9,8 @@ import java.util.List;
 @Service
 public class ValidationServiceImpl implements ValidationService{
     @Autowired ValidationRepo student;
+     @Override
+public ValidationEntity PostData(ValidationEntity stu){
+    return student.save(stu);
+}
 }
