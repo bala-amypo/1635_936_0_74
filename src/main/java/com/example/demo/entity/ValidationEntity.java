@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import jakarta.validation.constraints.email;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 @Entity
@@ -15,9 +15,9 @@ public class ValidationEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @NotNull
-    @size(min=2, max=10,message="must be 2 to 10 character")
+    @Size(min=2, max=10,message="must be 2 to 10 character")
     private String username;
-    @email (message="Email is not valid")
+    @Email (message="Email is not valid")
     private String email;
     @Size(min=2, max=6,message="Password must be 2 to 6 character")
     @NotNull(message="Password is mandatory")
@@ -50,14 +50,14 @@ public class ValidationEntity{
     public void setPassword(String password){
         this.password=password;
     }
-     public void setAge(Int age){
+     public void setAge(int age){
         this.age=age;
     }
-    public Int getAge(){
+    public int getAge(){
         return age;
     }
     public ValidationEntity(Long id,
-     @NotNull @size(min=2, max=10,message="must be 2 to 10 character") String username,
+     @NotNull @Size(min=2, max=10,message="must be 2 to 10 character") String username,
      @email (message="Email is not valid") String email,
      @Size(min=2, max=6,message="Password must be 2 to 6 character")
     @NotNull(message="Password is mandatory") String password,
