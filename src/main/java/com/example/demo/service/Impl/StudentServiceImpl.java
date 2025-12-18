@@ -37,5 +37,6 @@ public StudentEntity updateData(int id,StudentEntity entity){
         entity.setId(id);
         return student.save(entity);
     }
+    return null;
 }
 }
