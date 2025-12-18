@@ -6,6 +6,6 @@ public interface ValidationService{
      ValidationEntity PostData(ValidationEntity val);
     // List<ValidationEntity>getAllData();
     // String DeleteData(int id);
-    ValidationEntity getvalData(int id);
+    ValidationEntity getData(int id);
     // ValidationEntity updateData(int id,ValidationEntity entity);
 }
