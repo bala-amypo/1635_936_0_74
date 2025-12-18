@@ -19,5 +19,7 @@ public StudentEntity PostData(StudentEntity Stu){
     return student.save(stu;)
 }
 @Override
-public List<Student
+public List<StudentEntity>getAllData(){
+return student.getAllData();
+}
 }
