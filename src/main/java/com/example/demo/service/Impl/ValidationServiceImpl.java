@@ -10,7 +10,7 @@ import java.util.List;
 public class ValidationServiceImpl implements ValidationService{
     @Autowired ValidationRepo student;
      @Override
-public ValidationEntity PostData(ValidationEntity stu){
-    return student.save(stu);
+public ValidationEntity PostData(ValidationEntity val){
+    return student.save(val);
 }
 }
