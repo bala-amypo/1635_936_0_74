@@ -19,7 +19,7 @@ public class ValidationController{
         return ser.PostData(stu);
     }
     @GetMapping("/gettid/{id}")
-    public ValidationEntity getData(@PathVariable int id){
+    public ValidationEntity getData(@PathVariable Long id){
         return ser.getData(id);
 }
 }
