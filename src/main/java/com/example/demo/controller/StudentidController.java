@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 public class StudentidController{
     @Autowired StudentidService ser;
-    @PostMapping("/post")
+    @PostMapping("/post1")
     public StudentidEntity sendData3 (@RequestBody StudentidEntity stu){
         return ser.PostData(stu);
     }
