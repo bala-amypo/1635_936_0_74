@@ -1,5 +1,5 @@
 package com.example.demo.entity;
-import java.util.Date;
+import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.AllArgsConstructor;
