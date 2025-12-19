@@ -2,6 +2,8 @@ package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
 import lambok.Data;
+import lambok.AllArgsConstructor;
+import lambok.NoArgsConstructor;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -12,7 +14,6 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 @Entity
 @Data
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ValidationEntity{
