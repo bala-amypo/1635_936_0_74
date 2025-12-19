@@ -18,4 +18,6 @@ public class StudentidEntity{
     private int id;
     private int idcardno;
     private int studentid;
+    
+    private StudentDetailsEntity
 }
