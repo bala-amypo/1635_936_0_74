@@ -15,6 +15,6 @@ public ValidationEntity PostData(ValidationEntity val){
 }
 @Override
 public ValidationEntity getData(int id){
-    return Student.findById(id).orElseThrow();
+    return Student.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
 }
 }
