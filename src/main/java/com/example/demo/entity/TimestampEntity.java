@@ -23,13 +23,14 @@ public class TimestampEntity{
     private LocalDateTime updateAt;
 
 @PrePersist
-LocalDateTime now=LocalDateTime().now();
-public void Oncreate(){
+protected void Oncreate(){
+  LocalDateTime now=LocalDateTime.now();
   this.createAt=now;
   this.updateAt=now;
 }
 @PreUpdate
-public void OnUpdate (){
+protected void OnUpdate (){
+ LocalDateTime now=LocalDateTime.now();
   this.updateAt=now;
 }
 }
