@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
@@ -19,5 +20,5 @@ public class StudentidEntity{
     private int idcardno;
     private int studentid;
     
-    private StudentDetailsEntity
-}
+    @OneToOne
+    private StudentDetailsEntity student;
