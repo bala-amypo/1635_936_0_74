@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Timestamp{
+public class TimestampEntity{
       @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
