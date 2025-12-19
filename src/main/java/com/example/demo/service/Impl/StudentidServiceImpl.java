@@ -14,3 +14,4 @@ public class StudentidServiceImpl implements StudentidService{
 public StudentidEntity PostData(StudentidEntity card){
     return student.save(card);
 }
+}
