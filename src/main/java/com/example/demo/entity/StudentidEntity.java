@@ -16,6 +16,6 @@ public class StudentidEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 
     private String id;
-    private String regno;
-    private String address;
+    private String idcardno;
+    private String studentid;
 }
